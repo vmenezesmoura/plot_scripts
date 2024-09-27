@@ -69,7 +69,7 @@ def fig_3x4_4subplot(ss0: list[pd.Series], ss: list[pd.Series], xlabel_subplot0:
     xlabel_subplot2 = 'erro'
     ylabel_subplot2 = ylabel_subplot0
     xlabel_subplot3 = ''
-    ylabel_subplot3 = xlabel_subplot0
+    ylabel_subplot3 = xlabel_subplot0[0][:-2]
 
     # List of statistical measures to calculate
     list_stats = ['mean', 'range', 'std', 'iqr', 'skew', 'kurtosis']
